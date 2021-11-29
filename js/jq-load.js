@@ -10,6 +10,7 @@ $("nav a").click(function(e) {
   //var rootPath = @URL.Content("~")
 
   var url = $(this).attr("href");
+  console.log(url);
   $("#content")
     .load(url + " #container", function(response, status, xhr) {
       console.log(status);
